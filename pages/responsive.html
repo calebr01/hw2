@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
     <title>HW2</title>
 </head>
 
 <body>
     <h1>Responsive Image</h1>
     <h2>750px -> 800px w/ 97% of view window...</h2>
+
+    <!--Contains 3 Images. srcset allows the browser to choose between those 3 Images w/ diff. resolutions & widths-->
+    <!--sizes represents what will happen when certain media conditions are met.Sspecifically, when the viewport is 800px 
+    or less, the image will become 750px containing 97 of the view window.-->
     <img src="../img/halloween-vintage-card.jpg" alt="Halloween Vintage Card" srcset="../img/halloween-vintage-card-720px.png 200w, 
                 ../img/halloween-vintage-card-1080px.png 750w, 
                 ../img/halloween-vintage-card-1920px.png 1920w" sizes="(max-width: 800px) 97vw, 750px">
