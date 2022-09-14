@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/adirection.css">
     <title>HW2</title>
 </head>
 
 <body>
+    <h1>Art Direction</h1>
+    <h2>Once we get less than 800px on the view window well show two images</h2>
     <picture>
-        <source media="(max-width: 500px)"
-            srcset="../img/halloween-vintage-pumpkin-card-sign.jpg 250w, ../img/halloween-vintage-pumpkin-card-guy.jpg 500w, ../img/halloween-vintage-pumpkin-card-16292731920gd.jpg 800w"
-            sizes="98vw">
-        <source media="(min-width: 500px)" srcset="img\halloween-vintage-pumpkin-card-16292731920gd.jpg" sizes="98vw">
-        <img src="../img/halloween-vintage-pumpkin-card-16292731920gd.jpg" alt="Vintage Pumking Man Card">
+        <!--@<800px on the view window will cause this source to start-->
+        <source media="(max-width: 800px)"
+            srcset="../img/halloween-vintage-pumpkin-card-guy.jpg 800w, ../img/halloween-vintage-pumpkin-card-sign.jpg 400w"
+            sizes="100vw">
+        <!--@>800px on the view window will cause this source to start-->
+        <source media="(min-width: 800px)" srcset="../img/halloween-vintage-pumpkin-card-16292731920gd.jpg 800w"
+            sizes="50vw">
+        <img src="../img/halloween-vintage-pumpkin-card-16292731920gd.jpg" alt="Vintage Pumking Man Card" sizes="50vw">
     </picture>
+    <br>
     <a href="../index.html" rel="link back home">BACK</a>
 </body>
 
